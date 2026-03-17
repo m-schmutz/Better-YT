@@ -36,7 +36,7 @@ sql:
 
 
 yt-dlp --js-runtimes /home/msch/Projects/Better-YT/binaries/deno -F "https://www.youtube.com/watch?v=0C-vi2i12o0"
-./yt-dlp --js-runtimes "deno:/home/msch/projects/better-yt/binaries/deno" -f "video[codec*=vp9]" -F "https://www.youtube.com/watch?v=0C-vi2i12o0"
+./yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" -f "video[codec*=vp9]" -F "https://www.youtube.com/watch?v=0C-vi2i12o0"
 
 
 
