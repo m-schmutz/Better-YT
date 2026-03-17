@@ -68,3 +68,51 @@ ba[ext=m4a]
 /b[ext=mp4]
 
     fallback: if the site doesn’t offer separate video/audio streams, use the best single MP4 file
+
+
+
+
+
+# result = run(['which', 'asdf'], capture_output=True, text=True)
+# result = check_output(['which', 'asdf'])
+
+# https://www.youtube.com/watch?v=T-VZ1kL8ZgE&t
+
+# print("STDOUT:", result.stdout)
+# print("STDERR:", result.stderr)
+# print("Return code:", result.returncode)
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" --print "%(title)s\n%(uploader)s\n%(upload_date)s\n%(duration)s" "https://www.youtube.com/watch?v=T-VZ1kL8ZgE&t"
+
+
+
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" --print-json "{thumbnail: .thumbnail, fulltitle: .fulltitle, original_url: .original_url}" "https://www.youtube.com/watch?v=T-VZ1kL8ZgE&t"
+
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" -J "https://www.youtube.com/watch?v=T-VZ1kL8ZgE&t"
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" -J "https://www.youtube.com/@EmperorLemon"
+
+# python3 yt-dlp --js-runtimes yt-dlp --skip-download --print "%(thumbnail)s" "https://www.youtube.com/@LinusTechTips"\\
+
+
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" --skip-download --print "%(thumbnail)s" "https://www.youtube.com/@LinusTechTips"
+
+# https://www.youtube.com/feeds/videos.xml?channel_id=UC7Ucs42FZy3uYzjrqzOIHsw
+
+# python3 yt-dlp --js-runtimes "deno:/home/msch/Projects/Better-YT/binaries/deno" -J "https://www.youtube.com/watch?v=T-VZ1kL8ZgE&t"
+
+
+
+
+
+title
+thumbnail
+channel
+uploader_url
+original_url
+duration_string
+
+does the yt-dlp-ejs need to be installed in the same python environment that the yt-dlp is being ran with
+
+
+
+
+I want to make sure that my yt-dlp-ejs package is always up to date before running. if the python environment that is currently running updates its own pip packages, does this cause issues?
