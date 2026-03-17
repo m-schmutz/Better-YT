@@ -26,6 +26,12 @@ sql:
         - duration
         - channel_id
 
+    Audios
+        - id
+        - name
+        - duration
+        - channel_id
+
 
 
 
