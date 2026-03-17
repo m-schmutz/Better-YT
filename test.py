@@ -26,6 +26,7 @@ result = check_output(['which', 'asdf'])
 
 # https://www.youtube.com/feeds/videos.xml?channel_id=UC7Ucs42FZy3uYzjrqzOIHsw
 
+# yt-dlp --no-playlist -J "https://www.youtube.com/@LinusTechTips"
 
 '''
 fields to get:
