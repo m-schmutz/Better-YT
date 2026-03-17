@@ -1,0 +1,40 @@
+
+
+
+
+data:
+    avatars/
+        avatar_<channel_id>.jpg
+
+    videos/
+        video_<video_id>.mp4
+
+    thumbnails/
+        thumbnail_<video_id>.jpg
+
+
+
+
+sql:
+    Channels
+        - id
+        - name
+
+    Videos
+        - id
+        - name
+        - duration
+        - channel_id
+
+
+
+
+yt-dlp --js-runtimes /home/msch/Projects/Better-YT/binaries/deno -F "https://www.youtube.com/watch?v=0C-vi2i12o0"
+./yt-dlp --js-runtimes "deno:/home/msch/projects/better-yt/binaries/deno" -f "video[codec*=vp9]" -F "https://www.youtube.com/watch?v=0C-vi2i12o0"
+
+
+
+what download should be:
+    - best video
+    - best audio
+    - video format is .mp4
