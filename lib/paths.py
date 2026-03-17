@@ -1,6 +1,10 @@
 # user defined paths
 
-YT_DLP_PATH = '/home/msch/Projects/Better-YT/binaries/yt-dlp'
+YT_DLP_PY_PATH = ''
 
-DENO_JS_PATH = '/home/msch/Projects/Better-YT/binaries/deno'
+YT_DLP_PIP_PATH = ''
+
+YT_DLP_PATH = ''
+
+DENO_JS_PATH = ''
 
