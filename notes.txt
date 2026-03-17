@@ -38,3 +38,27 @@ what download should be:
     - best video
     - best audio
     - video format is .mp4
+
+
+
+
+yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" URL
+
+🧠 Why this works
+bv*[ext=mp4]
+
+    bv* = best video-only stream
+
+    [ext=mp4] = must be in an mp4 container
+
+    yt‑dlp automatically picks the highest resolution + bitrate
+
+ba[ext=m4a]
+
+    ba = best audio-only stream
+
+    [ext=m4a] = must be m4a (the audio format used inside mp4)
+
+/b[ext=mp4]
+
+    fallback: if the site doesn’t offer separate video/audio streams, use the best single MP4 file
