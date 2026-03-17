@@ -1,8 +1,9 @@
 # user defined paths
 
-YT_DLP_PY_PATH = ''
 
-YT_DLP_PIP_PATH = ''
+DLP_ENV_PY = ''
+
+DLP_ENV_PIP = ''
 
 YT_DLP_PATH = ''
 
