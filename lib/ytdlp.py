@@ -1,4 +1,4 @@
-from .paths import YT_DLP_PATH, DENO_JS_PATH
+from .paths import YT_DLP_PATH, DENO_JS_PATH, YT_DLP_PIP_PATH, YT_DLP_PY_PATH
 from subprocess import run
 
 from json import loads
@@ -40,6 +40,14 @@ def _video_download_args(videoUrl: str, filename: str):
 
 def _audio_download_args():
     pass
+
+
+
+def update_yt_dlp():
+    args = [YT_DLP_PIP_PATH, 'install', '-U', 'yt-dlp-ejs']
+    args2 = [YT_DLP_PY_PATH, YT_DLP_PATH, '-U']
+
+
 
 
 
